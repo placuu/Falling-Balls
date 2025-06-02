@@ -35,12 +35,12 @@ int main() {
 
 	sf::Font font;
 	if (!font.openFromFile("C:/Windows/Fonts/arial.ttf")) {
-		std::cout << "BŁĄD: Nie można załadować nawet systemowej czcionki Arial!" << std::endl;
-		std::cout << "Problem może być z SFML lub systemem" << std::endl;
+		std::cout << "ERROR: Unable to load even the system Arial font!" << std::endl;
+		std::cout << "The problem may be with SFML or the system" << std::endl;
 		return -1;
 	}
 
-	std::cout << "SUCCESS: Załadowano systemową czcionkę Arial!" << std::endl;
+	std::cout << "SUCCESS: System Arial font loaded successfully!" << std::endl;
 
 	sf::Text text(font,"", 30);
 	text.setFillColor(sf::Color::White);
