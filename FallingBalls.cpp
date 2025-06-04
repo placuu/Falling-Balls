@@ -34,7 +34,7 @@ int main() {
 	std::vector<sf::CircleShape> circles;
 
 	sf::Font font;
-	if (!font.openFromFile("C:/Windows/Fonts/arial.ttf")) {
+	if (!font.openFromFile("arial.ttf")) {
 		std::cout << "ERROR: Unable to load even the system Arial font!" << std::endl;
 		std::cout << "The problem may be with SFML or the system" << std::endl;
 		return -1;
